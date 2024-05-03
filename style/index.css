@@ -1,0 +1,420 @@
+.Container1 {
+    width: 700px;
+    height: 194px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 70px;
+    margin-bottom: 70px;
+    width: 100%;
+}
+
+.Heading {
+    width: 546.67px;
+    height: 38.50px;
+    text-align: center;
+    color: white;
+    font-size: 22px;
+    font-family: Poppins;
+    font-weight: 275;
+    line-height: 38.50px;
+    letter-spacing: 0.60px;
+    word-wrap: break-word;
+}
+
+.Description {
+    width: 682.74px;
+    height: 154px;
+    text-align: center;
+    color: white;
+    font-size: 22px;
+    font-family: Poppins;
+    font-weight: 275;
+    line-height: 38.50px;
+    letter-spacing: 0.60px;
+    word-wrap: break-word;
+}
+
+/*=============================================*/
+.Section2 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    justify-items: center;
+    margin: 30px;
+
+    
+}
+
+.Container2 {
+    width: 549.33px;
+    height: 823.98px;
+    position: relative;
+    overflow: hidden;
+    transition: 1.1s;
+}
+
+.Container2:hover{
+    scale: 1.1;
+}
+
+.Link {
+    width: 525.33px;
+    height: 799.98px;
+    position: relative;
+}
+
+.Image {
+    width: 525.33px;
+    height: 799.98px;
+    position: absolute;
+}
+
+.Background {
+    width: 525.33px;
+    height: 799.98px;
+    position: absolute;
+    background: linear-gradient(0deg, #090B09 0%, rgba(16, 18, 19, 0) 60%);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.Paragraph {
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.Heading3FullServiceCatering,
+.Heading3ExplosionOfFlavors,
+.Heading3SignatureDrinks {
+    text-align: center;
+    color: white;
+    font-size: 28.50px;
+    font-family: Jost;
+    font-weight: 500;
+    line-height: 37.05px;
+    margin-bottom: 10px;
+}
+
+.LearnMore,
+.SeeMenu,
+.ExploreTheBar {
+    text-align: center;
+    color: white;
+    font-size: 15px;
+    font-family: Poppins;
+    font-weight: 275;
+    line-height: 26.25px;
+    letter-spacing: 0.60px;
+    margin-top: 10px;
+}
+
+/*===============================================*/
+.section3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+.Explore {
+    width: 80px;
+    height: 26.25px;
+    font-size: 13.50px;
+    font-weight: 500;
+    text-transform: uppercase;
+    line-height: 26.25px;
+    word-wrap: break-word;
+    margin: 10px;
+}
+
+.Heading2OurMenu {
+    width: 188.82px;
+    height: 50.40px;
+    font-size: 42px;
+    font-family: 'Jost', sans-serif;
+    font-weight: 500;
+    line-height: 50.40px;
+    word-wrap: break-word;
+}
+
+.Description {
+    width: 424.37px;
+    height: 52.50px;
+    font-size: 15px;
+    font-weight: 275;
+    line-height: 26.25px;
+    letter-spacing: 0.60px;
+    word-wrap: break-word;
+}
+
+/*==============================================================*/
+.section4{
+    padding-left: 70px;
+    padding-right: 70px;
+}
+
+.title {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 45px;
+    font-family: Jost;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-top: 80px;
+    
+}
+
+.subtitle {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    color: #AAAAAA;
+    font-size: 13.50px;
+    font-family: Poppins;
+    font-style: italic;
+    font-weight: 275;
+    line-height: 22.95px;
+    letter-spacing: 0.60px;
+    word-wrap: break-word;
+    margin-bottom: 80px;
+
+}
+
+.menu {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1px;
+    width: auto; 
+    margin: 0 auto;
+    padding-left: 100px; 
+    padding-right: 100px;
+    
+}
+
+.item {
+    padding: 20px;
+    
+  }
+  
+  .name {
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+  }
+  
+  .details {
+    font-size: 14px;
+    color: #888;
+  }
+  
+  .price {
+    font-size: 16px;
+    font-weight: bold;
+    text-align: right;
+    color: #AAAAAA;
+  }
+
+/*===============================================*/
+.Container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px; 
+    width: 100%; 
+    margin-top: 80px;
+    margin-bottom: 80px;
+  }
+  
+  .Container img {
+    width: 100%; 
+    height: auto; 
+  }
+
+  .card{
+    width: auto;
+    aspect-ratio: 1/0.7;
+    position: relative;
+    cursor: pointer;
+  }
+  .card .image-box{
+    width: 100%;
+    height: 100%;
+  }
+  .card .image-box img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 50% 90%;
+    transition: 0.5s ease-in-out;
+  }
+  .card::after{
+    content: "";
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    transition: 0.4s ease-in-out;
+  }
+  .card:hover img{
+    filter: grayscale(0.1) brightness(0.4);
+  }
+  .card:hover::after{
+    opacity: 1;
+    inset: 20px;
+  }
+  
+  .content h2{
+    width: 80%;
+    position:absolute;
+    color: white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: 2s ease-in-out;
+    text-align: center;
+    display: none; 
+  }
+ .card:hover h2{
+    display: block;
+    
+  }
+
+  /*=============================*/
+  
+  .slider-container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    display: flex;
+    background-color: #1B1B1C;
+  }
+  
+  .slider {
+    display: flex;
+    transition: transform 0.5s ease;
+    
+  }
+  
+  .slide {
+    flex-shrink: 0;
+    width: 100%;
+    
+  }
+
+  .slide p{
+    width: 100%; 
+    height: 197px;
+    text-align: center; 
+    color: #EEEEEF; 
+    font-size: 50px; 
+    font-family: Jost; 
+    font-weight: 500; 
+    line-height: 57.60px; 
+    letter-spacing: 0.60px; 
+    word-wrap: break-word;
+  }
+  
+  .prev-slide,
+  .next-slide {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 80px;
+    color: white;
+    cursor: pointer;
+    font-weight: 1;
+  }
+  
+  .prev-slide {
+    left: 10px;
+  }
+  
+  .next-slide {
+    right: 10px;
+  }
+
+  /*=====================================*/
+.section9{
+  margin-top: 80px;
+}
+  .Heading2VisitUs {
+    width: 100%;
+    height: 46px;
+    text-align: center;
+    color: white;
+    font-size: 42px;
+    font-family: Jost;
+    font-weight: 500;
+    line-height: 50.40px;
+    word-wrap: break-word;
+  }
+
+  .GridContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two columns */
+    gap: 10px; 
+    justify-content: center; 
+  }
+  
+  .Container9 {
+    width: 100%;
+    height: 824px;
+    position: relative;
+    
+  }
+  
+  .Image {
+    width: 95%;
+    height: 800px;
+    position: absolute;
+    left: 24px;
+    top: 24px;
+  }
+  
+  .Background {
+    width: 100%;
+    height: 800px;
+    position: absolute;
+    left: 24px;
+    top: 24px;
+    background: linear-gradient(0deg, #090B09 0%, rgba(16, 18, 19, 0) 60%);
+  }
+  
+  .Content {
+    width: 100%;
+    height: 238.64px;
+    position: absolute;
+    left: 0px;
+    top: 561.36px;
+    margin-left: 30px;
+  }
+  
+  .Heading2LagunaBeach, .Heading2SanFrancisco {
+    color: white;
+    font-size: 42px;
+    font-family: Jost;
+    font-weight: 500;
+    line-height: 50.40px;
+    word-wrap: break-word;
+  }
+  
+  
+  
+  
+  
+  
+
+
+

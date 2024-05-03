@@ -1,0 +1,127 @@
+footer{
+    background-color: #1A191B;
+}
+.upper{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Two columns */
+    gap: 10px; 
+    justify-content: center;
+    align-items: center;
+    text-align: center; 
+
+}
+
+.upper1{
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 100px;
+}
+.upper1 h4{
+    text-align: center; 
+    color: white; 
+    font-size: 18.10px; 
+    font-weight: 500px; 
+    text-transform: uppercase; 
+    line-height: 27.14px; 
+    word-wrap: break-word;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+.upper1 p{
+    text-align: center; 
+    color: white; 
+    font-size: 13.50px; 
+    font-family: Poppins; 
+    font-weight: 275; 
+    line-height: 23.63px; 
+    letter-spacing: 0.60px; 
+    word-wrap: break-word;
+}
+.upper1 a{
+    border: solid white;
+    color: white;
+    text-decoration: none;
+    text-align: center; 
+    color: white; 
+    font-size: 20px; 
+    font-family: Inter; 
+    font-weight: 400; 
+    word-wrap: break-word;
+    padding: 10px;
+    transition: 1.1s;
+    
+}
+
+.upper1 a:hover{
+    color: #1D1D1B;
+    background-color: white
+}
+
+.footer-col .social-links a {
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #ffffff;
+    transition: all 0.5s ease;
+  }
+  
+  .footer-col .social-links a:hover {
+    color: #24262b;
+    background-color: #ffffff;
+  }
+
+  .lower{
+    background-color: #2A292B;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Two columns */
+    gap:100px; 
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 40px;
+  }
+
+.lower .p1{
+    color: white; 
+    font-size: 9px; 
+    font-family: Poppins; 
+    font-weight: 400; 
+    text-transform: uppercase; 
+    line-height: 15.30px; 
+    letter-spacing: 2px;
+    word-wrap: break-word;
+    justify-content: left;
+    text-align: left;
+    margin-left: 10px;
+}
+
+.lower .p2{
+    color: white; 
+    font-size: 9px; 
+    font-family: Poppins; 
+    font-weight: 400; 
+    text-transform: uppercase; 
+    line-height: 15.30px; 
+    letter-spacing: 2px;
+    word-wrap: break-word;
+    justify-content: right;
+    text-align: right;
+    margin-right: 10px;
+}
+
+.lower h3{
+    text-align: center; 
+    color: white; 
+    font-size: 24px; 
+    font-family: Poppins; 
+    font-weight: 400; 
+    text-transform: uppercase; 
+    line-height: 15.30px; 
+    letter-spacing: 2px; 
+    word-wrap: break-word
+}

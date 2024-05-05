@@ -1,0 +1,112 @@
+header{
+    background-image: url('/images/booking photo.jpeg');
+    background-size: cover;
+}
+
+.contant{
+    text-align: center; 
+    color: white; 
+    font-size: 32px; 
+    font-family: Poppins; 
+    font-weight: 500; 
+    text-transform: uppercase;
+    word-wrap: break-word;
+    margin-top: 100px;
+}
+
+section{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5px;
+    width: auto; 
+    margin: 0 auto;
+    padding: 100px;
+    margin:20px;
+    
+}
+
+.title p{
+    color: white; 
+    font-size: 15px; 
+    font-family: Poppins; 
+    font-weight: 275; 
+    line-height: 26.25px; 
+    letter-spacing: 0.60px; 
+    word-wrap: break-word;
+}
+.title h2{
+    color: white; 
+    margin-top: 10px;
+    font-family: Poppins; 
+    font-weight: 700; 
+    line-height: 26.25px; 
+    letter-spacing: 0.60px; 
+    word-wrap: break-word;
+}
+
+.day{
+    color: white; 
+    font-family: Poppins;
+    line-height: 26.25px; 
+    letter-spacing: 0.60px; 
+    word-wrap: break-word;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+form div{
+    margin-bottom: 30px;
+}
+form input{
+    background-color: #101010;
+    border: #444444 solid 0.5px;
+    width: 100%;
+    height: 50px;
+    margin-top: 10px;
+    color: #444444;
+    padding-left: 10px;
+    font-size: 20px;
+}
+form textarea{
+    background-color: #101010;
+    border: #444444 solid 0.5px;
+    width: 100%;
+    height: 100px;
+    margin-top: 10px;
+    color: #444444;
+    padding-left: 10px;
+    font-size: 20px;
+}
+
+.form-p{
+    color: white; 
+    font-size: 12px; 
+    font-family: Poppins; 
+    font-weight: 500; 
+    text-transform: uppercase; 
+    line-height: 26.25px; 
+    letter-spacing: 2px; 
+    word-wrap: break-word;
+}
+
+.button{
+    width: 118.55px; 
+    height: 48px; 
+    position: relative; 
+    background: white;
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+    transition: 0.6s;
+}
+
+.button:hover{
+    width: 118.55px; 
+    height: 48px; 
+    position: relative; 
+    background: #101010;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+}

@@ -8,8 +8,106 @@
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     background-color: #101010;
   }
-  header{
-    background-size: none;
+  .title{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 50px;
   }
+  .title h1{
+    color: white;
+    margin-bottom: 30px;
+    text-align: center; 
+    color: white; 
+    font-size: 48px; 
+    font-family: Jost; 
+    font-weight: 500; 
+    line-height: 52.80px; 
+    word-wrap: break-word;
+  }
+  .title p{
+    text-align: center; 
+    color: white; 
+    font-size: 15px; 
+    font-family: Poppins; 
+    font-weight: 275; 
+    line-height: 26.25px; 
+    letter-spacing: 0.60px; 
+    word-wrap: break-word;
+  }
+
+  section{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    width: auto; 
+    margin: 0 auto;
+    padding: 100px;
+    margin:20px;
+  }
+
+  .item {
+    padding: 10px;
+    
+  }
+  
+  .name {
+    font-size: 18px;
+    font-weight: bold;
+    color: #CC8A72;
+  }
+  
+  .details {
+    font-size: 14px;
+    color: #888;
+  }
+  
+  .price {
+    font-size: 16px;
+    font-weight: bold;
+    text-align: right;
+    color: #CC8A72;
+  }
+
+  .border, .non-border h2{
+    text-align: center; 
+    color: #CC8A72; 
+    font-size: 27px; 
+    font-family: Jost; 
+    font-weight: 500; 
+    letter-spacing: 2px; 
+    word-wrap: break-word"
+  }
+  .menu{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1px;
+    width: auto; 
+    margin: 10px;
+    padding: 20px;
+    border: solid ;
+  }
+  .menu .price{
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  .non-border{
+    margin-top: 40px;
+  }
+  
+
+  .non-border .small-bites-p{
+    color: #CCB9B5; 
+    font-size: 13.50px; 
+    font-family: Poppins; 
+    font-style: italic; 
+    font-weight: 275; 
+    line-height: 22.95px; 
+    letter-spacing: 0.60px; 
+    word-wrap: break-word;
+  }
+
 
   /*CC8A72    CCB9B5   191A19*/

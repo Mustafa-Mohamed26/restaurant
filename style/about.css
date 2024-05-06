@@ -1,0 +1,93 @@
+section{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5px;
+    width: auto; 
+    justify-content: center;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.container{
+    position: relative;
+    display: inline;
+    
+}
+
+.rotate p{
+    transform: rotate(90deg); 
+    transform-origin: 0 0; 
+    
+    color: white; 
+    font-size: 20px; 
+    font-family: Poppins; 
+    font-weight: 500; 
+    text-transform: uppercase; 
+    line-height: 26.25px; 
+    letter-spacing: 4px; 
+    word-wrap: break-word;
+}
+
+
+.content{
+    margin-left: 20px;
+    
+}
+
+.content p{
+    color: white; 
+    font-size: 15px; 
+    
+    line-height: 26.25px; 
+    letter-spacing: 0.60px; 
+    word-wrap: break-word;
+    margin-top: 15px;
+}
+
+.content h1{
+    color: white; 
+    font-size: 35px; 
+    
+    line-height: 26.25px; 
+    letter-spacing: 0.60px; 
+    word-wrap: break-word;
+    margin-top: 15px;
+}
+
+.photo1{
+    background-image: url('/images/Vegan dumplings\ 1.png');
+    background-size:cover;
+    height: 700px;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    
+    
+}
+
+.photo1 .about{
+    color: white; 
+    font-size: 40px; 
+    font-weight: bold; 
+    line-height: 26.25px; 
+    letter-spacing: 0.60px; 
+    word-wrap: break-word;
+    margin: 300px;
+   
+}
+.photo2{
+    background-image: url('/images/girl.png');
+    background-size:cover;
+    height: 700px;
+}
+.photo3{
+    background-image: url('/images/floar.png');
+    background-size:cover;
+    height: 700px;
+}
+.photo4{
+    background-image: url('/images/Chiile\ rice\ paper\ chips\ 1.png');
+    background-size:cover;
+    height: 700px;
+}

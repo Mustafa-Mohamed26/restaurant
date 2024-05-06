@@ -1,0 +1,156 @@
+section{
+    justify-content: center;
+    align-items: center;
+    
+    padding: 50px;
+    
+}
+.box{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5px;
+    width: 50%;
+    height:450px; 
+    margin-top: 40px;
+    border: white solid 2px;
+    
+    margin: auto;
+    
+}
+
+.left{
+    background-image: url('/images/table.png');
+    background-size: cover;
+    
+    
+}
+
+.photo{
+    padding: 5px;
+    display: flex;
+    width: 100%; 
+    margin-left: 20px;   
+    margin-top: 20px;
+}
+
+img{
+    width: 80px;
+    height: 80px;
+    border-radius: 20px;
+}
+
+.content{
+    color: white; 
+    font-weight: bold; 
+    line-height: 26.25px; 
+    letter-spacing: 0.60px; 
+    word-wrap: break-word;
+    margin-top: 15px;
+    padding: 10px;
+}
+
+
+.social-links{
+    align-items: center;
+    text-align: center;
+    align-items: center;
+    width: 100%;
+    margin: 10px;
+
+}
+.social-links a {
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #ffffff;
+    transition: all 0.5s ease;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.social-links a:hover {
+color: #24262b;
+background-color: #ffffff;
+}
+
+.formContainer{
+    align-items: center;
+    text-align: center;
+    align-items: center;
+    width: 100%;
+    margin: 10px;
+}
+
+.formContainer h2{
+    color: white; 
+    font-weight: bold; 
+    line-height: 26.25px; 
+    letter-spacing: 0.60px; 
+    word-wrap: break-word;
+    margin-top: 20px;
+    font-size: 50px;
+    padding: 10px;
+    margin-bottom: 40px;
+}
+
+form{
+    margin-top: 10px;
+}
+
+form input{
+    background-color: black;
+    color: white;
+    border: #444444;
+    width: 70%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding: 10px;
+}
+.links a{
+    color: #444444; 
+    font-weight: bold; 
+    line-height: 26.25px; 
+    letter-spacing: 0.60px; 
+    word-wrap: break-word;
+    margin-top: 15px;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.links a:after{
+    color: white; 
+    font-weight: bold; 
+    line-height: 26.25px; 
+    letter-spacing: 0.60px; 
+    word-wrap: break-word;
+    margin-top: 15px;
+    padding: 10px;
+    text-decoration: none;
+}
+
+button{
+    width: 50%;
+    height: 30px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    background-color: #CC8A72;
+    border: 1px solid ;
+    border-radius: 20px;
+}
+
+button:hover{
+    color: #CC8A72;
+    border: #CC8A72 solid 1px;
+    background-color: black;
+}
+
+.jus{
+    padding-top: 100px;
+}
+

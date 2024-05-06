@@ -4,6 +4,7 @@ section{
     gap: 5px;
     width: auto; 
     margin-top: 40px;
+    padding: 100px;
 }
 
 .left{
@@ -11,6 +12,11 @@ section{
     justify-content: center;
     align-items: center;
     text-align: center;
+}
+
+.contact{
+    padding: 100px;
+    
 }
 
 .contact p{

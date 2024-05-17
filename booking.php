@@ -15,7 +15,7 @@
 </head>
 <body>
     <header>
-        <img src="/images/booking photo.jpeg" alt="">
+        <img src="./images/booking photo.jpeg" alt="">
         <nav>
             <div class="logo">
                 <a href="./index.php"> <img src="./images/res_Logo.jpg" alt="logo"></a>

@@ -17,26 +17,26 @@
     <header>
         <nav>
             <div class="logo">
-                <a href="./index.html"> <img src="./images/res_Logo.jpg" alt="logo"></a>
+                <a href="./index.php"> <img src="./images/res_Logo.jpg" alt="logo"></a>
             </div>
 
             <div class="nav_bar">
                 <ul>
-                <li ><a href="./booking.html">Booing</a></li>
-                <li ><a href="./menu.html">Menu</a></li>
-                <li ><a href="./about_us.html">About US</a></li>
-                <li ><a href="./contact.html">Contact</a></li>
+                <li ><a href="./booking.php">Booing</a></li>
+                <li ><a href="./menu.php">Menu</a></li>
+                <li ><a href="./about_us.php">About US</a></li>
+                <li ><a href="./contact.php">Contact</a></li>
                 <li class="sign_up"></li>
                 </ul>
 
                 <div class="sign_Up_btn">
-                    <a class="btn" href="./sign_up.html">Sign Up</a>
+                    <a class="btn" href="./sign_up.php">Sign Up</a>
                 </div>
             </div>
         </nav>
     </header>
 
-    <section >
+    <section>
         <div class="content">
             <p>Our daily changing menu represents the best of what our local markets have to offer. Our
                 passion for sourcing fresh ingredients from farmers and suppliers we know, combining with
@@ -44,14 +44,15 @@
                 greatest joy.</p>
         </div>
 
-        <div class="photo1">
+        <div class="photo">
+            <img src="./images/Vegan dumplings 1.png" alt="">
             <div class="about">
                 <p>About Us</p>
             </div>
         </div>
     </section>
     <section >
-        <div class="photo2"></div>
+        <div class="photo"><img src="./images/girl.png" alt=""></div>
 
         <div class="Container">
             <div class="rotate">
@@ -91,11 +92,11 @@
             </div>
         </div>
 
-        <div class="photo3"></div>
+        <div class="photo"><img src="./images/floar.png" alt=""></div>
 
     </section>
     <section >
-        <div class="photo4"></div>
+        <div class="photo"><img src="./images/Chiile rice paper chips 1.png" alt=""></div>
         <div class="Container">
             
             <div class="rotate">

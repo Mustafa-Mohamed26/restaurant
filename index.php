@@ -19,20 +19,20 @@
         <img class="headerImg" src="./images/Header 1.png" alt="">
         <nav>
             <div class="logo">
-                <a href="./index.html"> <img src="./images/res_Logo.jpg" alt="logo"></a>
+                <a href="./index.php"> <img src="./images/res_Logo.jpg" alt="logo"></a>
             </div>
 
             <div class="nav_bar">
                 <ul>
-                <li ><a href="./booking.html">Booing</a></li>
-                <li ><a href="./menu.html">Menu</a></li>
-                <li ><a href="./about_us.html">About US</a></li>
-                <li ><a href="./contact.html">Contact</a></li>
+                <li ><a href="./booking.php">Booing</a></li>
+                <li ><a href="./menu.php">Menu</a></li>
+                <li ><a href="./about_us.php">About US</a></li>
+                <li ><a href="./contact.php">Contact</a></li>
                 <li class="sign_up"></li>
                 </ul>
 
                 <div class="sign_Up_btn">
-                    <a class="btn" href="./sign_up.html">Sign Up</a>
+                    <a class="btn" href="./sign_up.php">Sign Up</a>
                 </div>
             </div>
         </nav>
@@ -61,7 +61,7 @@
     </section>
 
     <div class="Section2">
-        <a href="./menu.html">
+        <a href="./menu.php">
             <div class="Container2">
                 <div class="Link">
                     <img class="Image" src="./images/Full Service Catering.png" />
@@ -75,7 +75,7 @@
             </div>
         </a>
 
-        <a href="./menu.html">
+        <a href="./menu.php">
             <div class="Container2">
                 <div class="Link">
                     <img class="Image" src="./images/Explosion of Flavors.png" />

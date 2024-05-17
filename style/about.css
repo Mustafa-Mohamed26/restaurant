@@ -1,7 +1,6 @@
 section{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 5px;
     width: auto; 
     justify-content: center;
     align-items: center;
@@ -55,25 +54,32 @@ section{
     margin-top: 15px;
 }
 
-.photo1{
-    background-image: url('/images/Vegan dumplings\ 1.png');
-    background-size:cover;
-    height: 700px;
+.photo{
+    width: 100%;
+    
     justify-content: center;
     text-align: center;
-    align-items: center;
-    
-    
+    align-items: center;  
 }
 
-.photo1 .about{
+.photo img{
+    width: 100%;
+    height: auto; 
+    display: block;
+}
+
+.photo .about{
     color: white; 
     font-size: 40px; 
     font-weight: bold; 
-    line-height: 26.25px; 
+    line-height: 40.25px; 
     letter-spacing: 0.60px; 
     word-wrap: break-word;
     margin: 300px;
+    position: absolute;
+    top: 15%;
+    left: 55%;
+    transform: translate(-50%, -50%);
    
 }
 .photo2{

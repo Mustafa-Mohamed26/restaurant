@@ -17,20 +17,20 @@
     <header>
         <nav>
             <div class="logo">
-                <a href="./index.html"> <img src="./images/res_Logo.jpg" alt="logo"></a>
+                <a href="./index.php"> <img src="./images/res_Logo.jpg" alt="logo"></a>
             </div>
 
             <div class="nav_bar">
                 <ul>
-                <li ><a href="./booking.html">Booing</a></li>
-                <li ><a href="./menu.html">Menu</a></li>
-                <li ><a href="./about_us.html">About US</a></li>
-                <li ><a href="./contact.html">Contact</a></li>
+                <li ><a href="./booking.php">Booing</a></li>
+                <li ><a href="./menu.php">Menu</a></li>
+                <li ><a href="./about_us.php">About US</a></li>
+                <li ><a href="./contact.php">Contact</a></li>
                 <li class="sign_up"></li>
                 </ul>
 
                 <div class="sign_Up_btn">
-                    <a class="btn" href="./sign_up.html">Sign Up</a>
+                    <a class="btn" href="./sign_up.php">Sign Up</a>
                 </div>
             </div>
         </nav>
@@ -41,28 +41,31 @@
         <div class="box">
 
             <div class="left">
-                <div class="photo">
-                    <img src="./images/res_Logo.jpg" alt="">
-                </div>
                 
-                <div class="content">
-                    <h2>Keep it special</h2>
-                    <br>
-                    <p>Welcome ,where culinary delights await! Sign up now to unlock a world of savory sensations and delectable experiences.</p>
-                </div>
-                <br><br><br><br>
+                <div class="body">
+                    <div class="photo">
+                        <img src="./images/res_Logo.jpg" alt="">
+                    </div>
+                    
+                    <div class="content">
+                        <h2>Keep it special</h2>
+                        <br>
+                        <p>Welcome ,where culinary delights await! Sign up now to unlock a world of savory sensations and delectable experiences.</p>
+                    </div>
+                    <br><br><br><br>
 
-                <div class="social-links">
-                    <a href="#"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <div class="social-links s2">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
                 </div>
             </div>
 
             <div class="container">
                 <div class="formContainer jus">
                     <h2>Login</h2>
-                    <form id="form" action="index.php" method="Post">
+                    <form id="form" action="" method="Post">
         
                         <div class="inputContainer">
                             <input type="text" placeholder="Email" id="email" name="email">
@@ -75,7 +78,7 @@
                         </div>
                         <button type="submit" id="submit-btn">Sign Up</button>
                         <div class="links">
-                            <a href="./sign_up.html">make a new account? </a>
+                            <a href="./sign_up.php">make a new account? </a>
                         </div>
                     </form>
                 </div>
@@ -105,7 +108,7 @@
             </div>
             <div class="upper1">
                 <h4>Reservations</h4>
-                <a href="./booking.html">book your table</a>
+                <a href="./booking.php">book your table</a>
                 <br>
                 <h4>Hours</h4>
 

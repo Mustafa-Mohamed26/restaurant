@@ -17,20 +17,20 @@
     <header>
         <nav>
             <div class="logo">
-                <a href="./index.html"> <img src="./images/res_Logo.jpg" alt="logo"></a>
+                <a href="./index.php"> <img src="./images/res_Logo.jpg" alt="logo"></a>
             </div>
 
             <div class="nav_bar">
                 <ul>
-                <li ><a href="./booking.html">Booing</a></li>
-                <li ><a href="./menu.html">Menu</a></li>
-                <li ><a href="./about_us.html">About US</a></li>
-                <li ><a href="./contact.html">Contact</a></li>
+                <li ><a href="./booking.php">Booing</a></li>
+                <li ><a href="./menu.php">Menu</a></li>
+                <li ><a href="./about_us.php">About US</a></li>
+                <li ><a href="./contact.php">Contact</a></li>
                 <li class="sign_up"></li>
                 </ul>
 
                 <div class="sign_Up_btn">
-                    <a class="btn" href="./sign_up.html">Sign Up</a>
+                    <a class="btn" href="./sign_up.php">Sign Up</a>
                 </div>
             </div>
         </nav>
@@ -44,7 +44,7 @@
                 <p>317 Pacific C HwyHuntington <br> CA 92648</p>
             </div>
 
-            <a href="./booking.html" class="button">book a table</a>
+            <a href="./booking.php" class="button">book a table</a>
 
             <p class="par">WHEN</p>
 
@@ -59,11 +59,11 @@
             </div>
         </div>
 
-        <div class="photo1"></div>
+        <div class="photo"><img src="./images/table.png" alt=""></div>
     </section>
 
     <section >
-        <div class="photo2"></div>
+        <div class="photo"><img src="./images/rest.jpg" alt=""></div>
 
         <div class="Container">
             <div class="content">
@@ -101,7 +101,7 @@
             </div>
         </div>
 
-        <div class="photo3"></div>
+        <div class="photo"><img src="./images/rest2.png" alt=""></div>
 
     </section>
 
@@ -153,7 +153,7 @@
             </div>
             <div class="upper1">
                 <h4>Reservations</h4>
-                <a href="./booking.html">book your table</a>
+                <a href="./booking.php">book your table</a>
                 <br>
                 <h4>Hours</h4>
 

@@ -621,7 +621,7 @@
             </div>
             <div class="upper1">
                 <h4>Reservations</h4>
-                <a href="./booking.html">book your table</a>
+                <a href="./booking.php">book your table</a>
                 <br>
                 <h4>Hours</h4>
 

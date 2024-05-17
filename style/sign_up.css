@@ -1,7 +1,7 @@
 section{
     justify-content: center;
     align-items: center;
-    
+    margin-top: 200px;
     padding: 50px;
     
 }
@@ -18,12 +18,9 @@ section{
     
 }
 
-.left{
-    background-image: url('/images/table.png');
-    background-size: cover;
-    
-    
-}
+
+
+
 
 .photo{
     padding: 5px;

@@ -16,6 +16,7 @@
 </head>
 <body>
     <header>
+        <img class="headerImg" src="./images/Header 1.png" alt="">
         <nav>
             <div class="logo">
                 <a href="./index.html"> <img src="./images/res_Logo.jpg" alt="logo"></a>
@@ -88,10 +89,10 @@
             </div>
         </a>
 
-        <a href="./menu.html">
+        <!--<a href="./menu.html">
             <div class="Container2">
                 <div class="Link">
-                    <img class="Image" src="/images/Signature Drinks.png" />
+                    <img class="Image" src="/images/drinks.jpg" />
                     <div class="Background">
                         <div class="Paragraph">
                             <div class="Heading3SignatureDrinks">Signature Drinks</div>
@@ -100,7 +101,7 @@
                     </div>
                 </div>
             </div>
-        </a>
+        </a>-->
     </div>
 
     <section class="section3">

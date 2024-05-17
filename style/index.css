@@ -40,16 +40,13 @@
 /*=============================================*/
 .Section2 {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 10px;
+    grid-template-columns: repeat(2, 1fr);
     justify-items: center;
-    margin: 30px;
-
-    
+ 
 }
 
 .Container2 {
-    width: 549.33px;
+    width:100%;
     height: 823.98px;
     position: relative;
     overflow: hidden;

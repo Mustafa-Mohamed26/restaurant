@@ -11,8 +11,11 @@
 nav{
     padding: 10px;
     display: flex;
+    position: absolute;
+    top: 10%;
+    left: 51%;
+    transform: translate(-50%, -50%);
     width: 100%;
-    
   }
 .logo img{
     width: 100px;

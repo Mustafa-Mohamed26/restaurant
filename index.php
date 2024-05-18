@@ -1,3 +1,11 @@
+<?php 
+   session_start();
+
+   include("PHP/config.php");
+   if(!isset($_SESSION['valid'])){
+    header("Location: index.php");
+   }
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -24,7 +32,7 @@
 
             <div class="nav_bar">
                 <ul>
-                <li ><a href="./booking.php">Booing</a></li>
+                <li ><a href="./booking.php">Booking</a></li>
                 <li ><a href="./menu.php">Menu</a></li>
                 <li ><a href="./about_us.php">About US</a></li>
                 <li ><a href="./contact.php">Contact</a></li>
@@ -32,7 +40,17 @@
                 </ul>
 
                 <div class="sign_Up_btn">
-                    <a class="btn" href="./sign_up.php">Sign Up</a>
+                <?php 
+                        $id = $_SESSION['id'];
+                        $query = mysqli_query($con,"SELECT*FROM customer WHERE CID=$id");
+
+                        while($result = mysqli_fetch_assoc($query)){
+                            $res_Uname = $result['username'];
+                            $res_id = $result['CID'];
+                        }
+
+                        echo "<a class='btn' href='profile.php?Id=$res_id'>$res_Uname</a>"; 
+                    ?>
                 </div>
             </div>
         </nav>

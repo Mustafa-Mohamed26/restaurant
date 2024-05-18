@@ -1,3 +1,6 @@
+<?php 
+   session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -22,7 +25,7 @@
 
             <div class="nav_bar">
                 <ul>
-                <li ><a href="./booking.php">Booing</a></li>
+                <li ><a href="./booking.php">Booking</a></li>
                 <li ><a href="./menu.php">Menu</a></li>
                 <li ><a href="./about_us.php">About US</a></li>
                 <li ><a href="./contact.php">Contact</a></li>
@@ -64,6 +67,33 @@
 
             <div class="container">
                 <div class="formContainer jus">
+                    <?php 
+                    
+                        include("./PHP/config.php");
+                        if(isset($_POST['submit'])){
+                            $email = mysqli_real_escape_string($con,$_POST['email']);
+                            $password = mysqli_real_escape_string($con,$_POST['password']);
+
+                            $result = mysqli_query($con,"SELECT * FROM customer WHERE email='$email' AND password='$password' ") or die("Select Error");
+                            $row = mysqli_fetch_assoc($result);
+
+                            if(is_array($row) && !empty($row)){
+                                $_SESSION['valid'] = $row['email'];
+                                $_SESSION['username'] = $row['username'];
+                                $_SESSION['mobile'] = $row['mobileNumber'];
+                                $_SESSION['id'] = $row['CID'];
+                            }else{
+                                echo "<div class='message'>
+                                    <p>Wrong email or Password</p>
+                                    </div> <br>";
+                                echo "<a href='login.php'><button class='btn'>Go Back</button>";
+                        
+                            }
+                            if(isset($_SESSION['valid'])){
+                                header("Location: home.php");
+                            }
+                        }else{
+                    ?>
                     <h2>Login</h2>
                     <form id="form" action="" method="Post">
         
@@ -76,12 +106,13 @@
                             <input type="password" placeholder="Password" id="password" name="password">
                             <span class="error-message" id="errorPassword1"></span>
                         </div>
-                        <button type="submit" id="submit-btn">Sign Up</button>
+                        <button type="submit" name="submit" id="submit-btn">Sign Up</button>
                         <div class="links">
                             <a href="./sign_up.php">make a new account? </a>
                         </div>
                     </form>
                 </div>
+                <?php } ?>
             </div>
 
         </div>

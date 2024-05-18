@@ -22,7 +22,7 @@
 
             <div class="nav_bar">
                 <ul>
-                <li ><a href="./booking.php">Booing</a></li>
+                <li ><a href="./booking.php">Booking</a></li>
                 <li ><a href="./menu.php">Menu</a></li>
                 <li ><a href="./about_us.php">About US</a></li>
                 <li ><a href="./contact.php">Contact</a></li>

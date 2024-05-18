@@ -61,8 +61,8 @@
             <p class="EnjoyAnUnforgettableExperience">ENJOY AN UNFORGETTABLE EXPERIENCE</p>
             
             <div class="buttons">
-                <a href="./menu.html">See Menu</a>
-                <a href="./booking.html">Book Your Table</a>
+                <a href="./menu.php">See Menu</a>
+                <a href="./booking.php">Book Your Table</a>
             </div>
 
             <div class="Welcome">

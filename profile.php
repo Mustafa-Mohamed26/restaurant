@@ -46,6 +46,8 @@
                     while($result = mysqli_fetch_assoc($query)){
                         $res_Uname = $result['username'];
                         $res_id = $result['CID'];
+                        $res_email = $result['email'];
+                        $res_mobile = $result['mobileNumber'];
                     }
 
                     echo "<a class='btn' href='profile.php?Id=$res_id'>$res_Uname</a>"; 
@@ -56,16 +58,16 @@
         
         <div class="user">
             <div>
-                <h3>Name: </h3>
-                <h3>Email: </h3>
-                <h3>Phone Number: </h3>
+                <p>ID: <?php echo $res_id ?></p>
+                <p>NAME: <?php echo $res_Uname ?></p>
+                <p>EMAIL: <?php echo $res_email ?></p>
+                <p>MOBILE NUMBER: <?php echo $res_mobile ?></p>
             </div>
-
-            <div class="photo">
-                <img src="./images/accept.png" alt="">
-            </div>
-
+            
+            <div class="logOut"><a href="php/logout.php"> <button class="btn">Log Out</button> </a></div>
         </div>
+
+        
     </header>
 
     <section>

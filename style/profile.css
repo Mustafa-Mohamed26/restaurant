@@ -6,6 +6,26 @@ header{
     position: relative;
     
 }
+.logOut .btn{
+    background: black;
+    border: none;
+    border-radius: 6px;
+    text-align: right;
+    justify-content: right;
+    margin-left: 100px;
+    color: white;
+    font-size: 20px;
+    font-family: Yantramanav, sans-serif;
+    font-weight: 700;
+    word-wrap: break-word;
+    padding: 10px;
+    transition: 0.6s;
+}
+
+.logOut .btn:hover{
+    background: white;
+    color: black;    
+}
 
 .back{
     width: 100%;
@@ -18,7 +38,7 @@ header{
     background: rgba(255, 255, 255, 0.77); 
     border-radius: 35px;
     padding: 20px;
-    height: 100px;
+    height: 150px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     width: 50%;
@@ -28,12 +48,12 @@ header{
     left: 50%;
     transform: translate(-0%, -120%);
 }
-h3{
+.user p{
     margin-bottom: 10px;
-    font-weight: bold; 
     line-height: 26.25px; 
     letter-spacing: 0.60px; 
     word-wrap: break-word;
+    font-size: 30px;
 }
 
 .photo{

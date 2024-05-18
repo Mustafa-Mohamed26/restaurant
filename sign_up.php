@@ -62,8 +62,42 @@
 
             <div class="container">
                 <div class="formContainer">
+                <?php
+
+                    include(".\PHP\config.php");
+                    if(isset($_POST['submit'])){
+                        $username = $_POST['username'];
+                        $email = $_POST['email'];
+                        $mobile = $_POST['mobile'];
+                        $password = $_POST['password'];
+
+                        //verifying the unique email
+
+                        $verify_query = mysqli_query($con, "SELECT email FROM customer WHERE email = '$email'")or die("Erroe Occured");
+
+                        if(mysqli_num_rows($verify_query) !=0 ){
+                            echo "<div class='message'>
+                                    <p>This email is used, Try another One Please!</p>
+                                </div> <br>";
+                            echo "<a href='javascript:self.history.back()'><button class='btn'>Go Back</button>";
+                        }
+                        else{
+
+                            mysqli_query($con,"INSERT INTO customer (username, email, mobileNumber, password) VALUES ('$username','$email','$mobile','$password')") or die("Erroe Occured");
+
+                            echo "<div class='message'>
+                                    <p>Registration successfully!</p>
+                                </div> <br>";
+                            echo "<a href='login.php'><button class='btn'>Login Now</button>";
+                        
+
+                        }
+
+                        }else{
+
+                    ?>
                     <h2>Sign Up</h2>
-                    <form id="form" action="index.php" method="Post">
+                    <form id="form" action="" method="Post">
         
                         <div class="inputContainer">
                             <input type="text" placeholder="User Name" id="userName" name="username">
@@ -90,12 +124,13 @@
                             <span class="error-message" id="errorPassword2"></span> 
                         </div>
         
-                        <button type="submit" id="submit-btn">Sign Up</button>
+                        <button type="submit" name="submit" id="submit-btn">Sign Up</button>
                         <div class="links">
                             <a href="./login.php">have an account? </a>
                         </div>
                     </form>
                 </div>
+                <?php }?>
             </div>
 
         </div>

@@ -74,19 +74,32 @@
         <div class="title">
             <h1>Book List</h1>
         </div>
+            <?php
+                include("PHP/config.php");
+                $sql = "SELECT *
+                        FROM booking, types_table
+                        WHERE CID = $id
+                        AND booking.TID = types_table.TID";
+                $result = mysqli_query($con, $sql);
+            
+                if(mysqli_num_rows($result) > 0){
+                    while($row = mysqli_fetch_assoc($result)){
+                        echo "<div class='list'>";
 
-        <div class="list">
-            <div>
-                <h3>Booking number: </h3>
-                <h3>Data: </h3>
-                <h3>Time: </h3>
-                <h3>Number of People: </h3>
-            </div>
+                        echo "<div>";
+                        echo "<h3>Booking number: ". $row['BID']."</h3>";
+                        echo "<h3>Data: " . $row['date'] . "</h3>";
+                        echo "<h3>Time: " . $row['time'] . "</h3>";
+                        echo "<h3>Number of People: " . $row['NumOfP'] . "</h3>";
+                        echo "<h3>Table Type: " . $row['type'] . "</h3>";
+                        echo "</div>";
+                        echo "</div>";
+                    };
+                }
+            ?>
+        
 
-            <div class="message">
-                <h3>Your Message</h3>
-            </div>
-        </div>
+            ]
     </section>
 
    

@@ -90,8 +90,7 @@ section{
 }
 
 .list{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    margin-top: 50px;
     border: 1px solid white;
     border-radius: 20px;
     padding: 20px;

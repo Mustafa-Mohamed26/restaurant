@@ -192,5 +192,7 @@
             <p class="p2">taste the difference</p>
         </div>
     </footer>
+
+    <<script src="./javascript/signUp.js"></>
 </body>
 </html>

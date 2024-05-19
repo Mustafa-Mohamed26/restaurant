@@ -69,11 +69,29 @@ section{
     margin-bottom: 10px;
     font-size: 20px;
 }
+.time{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px;
+    width: auto; 
+    margin: 0 auto;
+    margin:20px;
+}
 
+.time label{
+    color: white; 
+    font-family: Poppins;
+    line-height: 26.25px; 
+    letter-spacing: 0.60px; 
+    word-wrap: break-word;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
 form div{
     margin-bottom: 30px;
 }
-form input{
+.list input{
     background-color: #101010;
     border: #444444 solid 0.5px;
     width: 100%;
@@ -85,16 +103,19 @@ form input{
     font-size: 20px;
 
 }
-form textarea{
+
+form select{
     background-color: #101010;
     border: #444444 solid 0.5px;
     width: 100%;
-    height: 100px;
+    height: 50px;
     margin-top: 10px;
     color: #444444;
     padding-left: 10px;
+    padding-right: 10px;
     font-size: 20px;
 }
+
 
 .form-p{
     color: white; 

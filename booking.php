@@ -14,7 +14,7 @@
     <title>Booking</title>
     <link rel="stylesheet" href="./style/nav.css">
     <link rel="stylesheet" href="./style/footer.css">
-    <link rel="stylesheet" href="./style/booking.css">
+    <link rel="stylesheet" href="./style/b.css">
     <link
       rel="stylesheet"
       type="text/css"
@@ -78,29 +78,84 @@
             </div>
         </div>
 
-        <form action="">
+        <?php
+        include(".\PHP\config.php");
+        if(isset($_POST['submit'])){
+            
+            $tableID = $_POST['tables'];
+            $date = $_POST['date'];
+            $time = $_POST['options'];
+            $NumberOfPeople = $_POST['NumberOfPeople'];
 
-            <div>
+
+            mysqli_query($con,"INSERT INTO booking (TID,CID, date, time, NumOfP)
+                               VALUES ('$tableID','$id', '$date', '$time', '$NumberOfPeople')")
+                               or die("Error Occurred");
+
+            
+
+            
+        }
+    ?>
+
+        <form action="" method="post">
+
+            <div class="list">
+                <label for="tables" class="form-p"> Select Table Type</label><br>
+                <?php
+                    $sqlD = "SELECT TID, type FROM types_table";
+                    $resultD = mysqli_query($con, $sqlD);
+
+                    echo '<select name="tables">';
+
+                    while ($rowD = mysqli_fetch_assoc($resultD)){
+                        echo '<option value="' . $rowD['TID'] . '">' . $rowD['type'] . '</option>';
+                    }
+                    echo '</select>'; 
+                ?>
+            </div>
+
+            <div class="list">
                 <p class="form-p">Date</p>
-                <input type="date">
+                <input type="date" name="date">
+            </div>
+            <p class="form-p">Time</p>
+            <div class="time">
+                
+                <div>
+                    <input type="radio" id="option1" name="options" value="17:00">
+                    <label for="option1">17:00 </label><br>
+                </div>
+                <div>
+                    <input type="radio" id="option2" name="options" value="18:00">
+                    <label for="option2">18:00 </label><br>
+                </div>
+                <div>
+                    <input type="radio" id="option3" name="options" value="19:00">
+                    <label for="option3">19:00 </label><br>
+                </div>
+                <div>
+                    <input type="radio" id="option4" name="options" value="20:00">
+                    <label for="option4">20:00 </label><br>
+                </div>
+                <div>
+                    <input type="radio" id="option5" name="options" value="21:00">
+                    <label for="option5">21:00 </label><br>
+                </div>
+                <div>
+                    <input type="radio" id="option6" name="options" value="22:00">
+                    <label for="option6">22:00 </label><br>
+                </div>
             </div>
 
-            <div>
-                <p class="form-p">Time</p>
-                <input type="text">
-            </div>
-
-            <div>
+            <div class="list">
                 <p class="form-p">Number of People</p>
-                <input type="text">
+                <input type="text" name="NumberOfPeople">
             </div>
 
-            <div>
-                <p class="form-p">Your Message</p>
-                <textarea id="message" name="message" rows="4" cols="50"></textarea>
-            </div>
+            
 
-            <input type="submit" value="SEND" class="button">
+            <input type="submit" name="submit" value="SEND" class="button">
 
         </form>
 

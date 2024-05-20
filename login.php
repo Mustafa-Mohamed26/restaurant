@@ -9,7 +9,7 @@
     <title>login</title>
     <link rel="stylesheet" href="./style/nav.css">
     <link rel="stylesheet" href="./style/footer.css">
-    <link rel="stylesheet" href="./style/s.css">
+    <link rel="stylesheet" href="./style/SignUp.css">
     <link
       rel="stylesheet"
       type="text/css"

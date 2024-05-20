@@ -6,7 +6,7 @@
     <title>Sign_up</title>
     <link rel="stylesheet" href="./style/nav.css">
     <link rel="stylesheet" href="./style/footer.css">
-    <link rel="stylesheet" href="./style/sign_up.css">
+    <link rel="stylesheet" href="./style/s.css">
     <link
       rel="stylesheet"
       type="text/css"
@@ -74,30 +74,12 @@
                         //verifying the unique email
 
                         $verify_query = mysqli_query($con, "SELECT email FROM customer WHERE email = '$email'")or die("Erroe Occured");
-
-                        if(mysqli_num_rows($verify_query) !=0 ){
-                            echo "<div class='message'>
-                                    <p>This email is used, Try another One Please!</p>
-                                </div> <br>";
-                            echo "<a href='javascript:self.history.back()'><button class='btn'>Go Back</button>";
-                        }
-                        else{
-
-                            mysqli_query($con,"INSERT INTO customer (username, email, mobileNumber, password) VALUES ('$username','$email','$mobile','$password')") or die("Erroe Occured");
-
-                            echo "<div class='message'>
-                                    <p>Registration successfully!</p>
-                                </div> <br>";
-                            echo "<a href='login.php'><button class='btn'>Login Now</button>";
                         
-
-                        }
-
-                        }else{
-
+                        mysqli_query($con,"INSERT INTO customer (username, email, mobileNumber, password) VALUES ('$username','$email','$mobile','$password')") or die("Erroe Occured");
+                    }
                     ?>
                     <h2>Sign Up</h2>
-                    <form id="form" action="" method="Post">
+                    <form id="signup-form" action="" method="Post">
         
                         <div class="inputContainer">
                             <input type="text" placeholder="User Name" id="userName" name="username">
@@ -120,7 +102,7 @@
                         </div>
         
                         <div class="inputContainer">
-                            <input type="password" placeholder="Confirmation Password" id="conf">
+                            <input type="password" placeholder="ConfirmationPassword" id="conf">
                             <span class="error-message" id="errorPassword2"></span> 
                         </div>
         
@@ -130,7 +112,7 @@
                         </div>
                     </form>
                 </div>
-                <?php }?>
+                
             </div>
 
         </div>

@@ -1,10 +1,10 @@
 document.getElementById('signup-form').addEventListener('submit', function(event) {
     event.preventDefault();
     
-    const username = document.getElementById('username').value;
+    const username = document.getElementById('userName').value;
     const email = document.getElementById('email').value;
     const password = document.getElementById('password').value;
-    const confirmPassword = document.getElementById('confirm-password').value;
+    const confirmPassword = document.getElementById('ConfirmationPassword').value;
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     const passwordRegex = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$/;
     

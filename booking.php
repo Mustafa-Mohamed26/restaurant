@@ -14,7 +14,7 @@
     <title>Booking</title>
     <link rel="stylesheet" href="./style/nav.css">
     <link rel="stylesheet" href="./style/footer.css">
-    <link rel="stylesheet" href="./style/b.css">
+    <link rel="stylesheet" href="./style/booking.css">
     <link
       rel="stylesheet"
       type="text/css"
@@ -92,10 +92,13 @@
                                VALUES ('$tableID','$id', '$date', '$time', '$NumberOfPeople')")
                                or die("Error Occurred");
 
-            
+            echo "<div class='message'>
+                    <p>booking successfully!</p>
+                  </div> <br>";
+            echo "<a href='profile.php'><button class='button'>see Your profile</button>";
 
             
-        }
+        }else{
     ?>
 
         <form action="" method="post">
@@ -158,6 +161,7 @@
             <input type="submit" name="submit" value="SEND" class="button">
 
         </form>
+        <?php }?>
 
     </section>
 

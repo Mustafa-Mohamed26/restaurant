@@ -77,6 +77,9 @@ section{
     margin: 0 auto;
     margin:20px;
 }
+.message p{
+    color: white;
+  }
 
 .time label{
     color: white; 

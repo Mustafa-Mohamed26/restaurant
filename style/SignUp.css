@@ -23,6 +23,10 @@ section{
     font-size: 12px;
   }
 
+  .message p{
+    color: white;
+  }
+
 
 
 .photo{
